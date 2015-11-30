@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"A3li"
+		]
+	},
+	"skinname-labor": "{{optional}}",
+	"labor-desc": "{{desc|what=skin|name=Labor|url=https://wiki.das-labor.org/}}",
+	"labor.css": "{{optional}}\nCSS applied to users using Labor skin.",
+	"labor.js": "{{optional}}\nJS for users using Labor skin."
+}

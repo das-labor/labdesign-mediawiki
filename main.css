@@ -1,0 +1,233 @@
+/* This file contains overrides for mediawiki stuff we don't want for Labor */
+
+h1, h2, h3, h4, h5, h6 {
+	padding-top: 0px;
+	border-bottom: none;
+}
+
+.uls-menu {
+	z-index: 2000 !important;
+}
+
+nav#wiki-actions ul.nav li.new a:link {
+	color: #ba0000;
+}
+
+nav#wiki-actions ul.nav li.new a:visited {
+	color: #a55858;
+}
+
+nav li {
+	margin-bottom: 0;
+}
+
+#f-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#privacy, #about, #disclaimer {
+	float: left;
+	padding-right: 2em;
+}
+
+div.footericons {
+	text-align: right;
+}
+
+div.footericons div {
+	display: inline-block;
+}
+
+body.page-Main_Page h1#firstHeading {
+	display: none;
+}
+
+div.jumbotron h1 {
+	font-size: 25pt;
+}
+
+body.page-Main_Page div.jumbotron img {
+	margin-top: -2em;
+}
+
+.mw-body-content {
+	padding-bottom: 10px;
+}
+
+.mw-pt-languages {
+	margin-bottom: 1em;
+	margin-top: -.75em;
+}
+
+.mw-pt-translate-header {
+	margin-bottom: -1em;
+}
+
+body.skin-labor .catlinks {
+	margin-top: 8px;
+	margin-bottom: 4px;
+	padding: 4px;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: #eee;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+div.box-caption {
+	padding-top: 4.25px;
+	padding-right: 8.5px;
+	padding-bottom: 6.25px;
+	padding-left: 8.5px;
+	background-color: #eeeeee;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-bottom: none;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	overflow: auto;
+}
+
+.captioned {
+	border-top: none;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+.mw-code {
+	font-size: 1em !important;
+}
+
+pre > pre {
+	font-size: 1em !important;
+	margin: 0 !important;
+}
+
+pre pre {
+	border-radius: 0;
+	border: none;
+	padding: 0;
+}
+
+.white {
+	color: #fff !important;
+}
+
+.skin-labor code {
+	color: #3E355A;
+	background-color: #eee;
+}
+
+.gw-box {
+	overflow: auto;
+}
+
+.cmd-box {
+	background-color: #333;
+	color: white;
+	border-radius: 4px;
+	padding: 4px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+.cmd-box code {
+	border: none;
+	background: none;
+	color: white;
+}
+
+.cmd-box .tripleclick-separator {
+	display: inline-block;
+	height: 0;
+	width: 0;
+}
+
+.cmd-box pre {
+	background: none;
+	border: none;
+	color: white;
+	margin: 0;
+	padding: 2px 4px;
+}
+
+.cmd-box a, .cmd-box a.external, .cmd-box a.external:visited {
+	color: white;
+}
+
+ul#preftoc {
+	display: block;
+	height: 2em;
+}
+
+ul#preftoc li {
+	float: left;
+	list-style-type: none;
+	margin-right: 1em;
+}
+
+ul#preftoc li a {
+	display: block;
+	text-decoration: none;
+	border-radius: 2px;
+	padding: .5em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+}
+
+ul#preftoc li.selected a {
+	background-color: #54487a;
+	color: white;
+}
+
+div#preferences {
+	clear: both;
+	margin-top: 2em;
+	border: 1px solid #EEE;
+	border-radius: 4px;
+	padding: 1em;
+}
+
+div#preferences .mainLegend {
+	font-family: 'Bitter', sans-serif;
+	font-size: 1.5em;
+}
+
+div#preferences legend {
+	font-size: 1.2em;
+}
+
+div#preferences table td {
+	padding: 4px;
+}
+
+.mw-echo-overlay {
+	z-index: 1001 !important;
+}
+
+#pt-notifications .mw-echo-notifications-badge {
+	padding: 10px 15px !important;
+	background: none;
+}
+
+#pt-notifications .mw-echo-notifications-badge:hover, #pt-notifications .mw-echo-notifications-badge:active, #pt-notifications .mw-echo-notifications-badge:focus {
+	background-color: #4b406d;
+}
+
+.flow-board-header, .flow-board-navigation, .flow-board-header-menu, .flow-board {
+	max-width: none;
+}
+
+div#content .flow-topic-title {
+	font-family: 'Bitter';
+}
+
+body.mw-special-Specialpages h2 {
+	border: none !important;
+	margin-bottom: 0.75em;
+}

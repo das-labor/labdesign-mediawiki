@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": ["A3li"]
+	},
+	"skinname-labor": "Labor",
+	"labor-desc": "Labors new web theme ported to MediaWiki",
+	"labor.css": "/* CSS placed here will affect users of the Labor skin */",
+	"labor.js": "/* Any JavaScript here will be loaded for users using the Labor skin */"
+}
