@@ -2982,3 +2982,39 @@ ul.three-icons li {
   color: #587ea3;
   background-color: #ffffff;
 }
+
+textarea {
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+}
+
+input.mw-summary, 
+input[id*='mw-input-'],
+input.forminput_button,  
+button, 
+input.mw-htmlform-submit,
+select,
+.ampmInput,
+input[class*='Input'],
+#wpSummary, #wpSave, #wpPreview, #wpDiff, #wpDestFile
+{
+border-radius: 4px;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+}
+input[id*='mw-input-wpsrf-'],
+input[id*='mw-input-wpsmw-']
+{
+  height: 14px; 
+}

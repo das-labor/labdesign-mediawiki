@@ -64,6 +64,18 @@ class LaborTemplate extends BaseTemplate {
 
                 <script src="<?php $this->text('stylepath') ?>/Labor/js/jquery-2.1.4.min.js"></script>
 		<script src="<?php $this->text('stylepath') ?>/Labor/js/bootstrap.min.js"></script>
+		<script src="<?php $this->text('stylepath') ?>/Labor/js/flatpickr/flatpickr.min.js"></script>
+		<script>
+			$(".make-me-a-date-time-picker").flatpickr({
+					 enableTime: true,
+					 dateFormat: "Y/m/d H:i:S",
+					 time_24hr: true
+			});
+			$(".make-me-a-date-picker").flatpickr({
+					 dateFormat: "Y/m/d"
+			});
+		</script>
+
 		<?php
 		$this->printTrail();
 		echo Html::closeElement( 'body' );
