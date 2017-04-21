@@ -3,7 +3,7 @@
  * Labor -- the new look of wiki.das-labor.org
  * MediaWiki implementation based on MonoBook nouveau.
  *
- * Copyright (C) 2014-2015 Alex Legler <a3li@gentoo.org>
+ * Copyright (C) 2014-2016 Alex Legler <a3li@gentoo.org>
  */
 
 /**
@@ -16,6 +16,8 @@ class SkinLabor extends SkinTemplate {
 	public $template  = 'LaborTemplate';
 
 	function setupSkinUserCss(OutputPage $out) {
+		$this->output = $out;
+
 		parent::setupSkinUserCss($out);
 
                 $CDN_URL = $this->getConfig()->get( 'LocalStylePath' ) .

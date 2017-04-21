@@ -26,6 +26,7 @@ $wgValidSkinNames['labor'] = 'Labor';
 
 // Register modules
 $wgResourceModules['skins.labor.styles'] = array(
+	'position' => 'top',
 	'styles' => array(
 		'main.css' => array('media' => 'screen'),
 	),

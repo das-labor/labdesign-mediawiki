@@ -3,7 +3,7 @@
  * Labor -- the new look of wiki.das-labor.org
  * MediaWiki implementation based on MonoBook nouveau.
  *
- * Copyright (C) 2014-2015 Alex Legler <a3li@gentoo.org>
+ * Copyright (C) 2014-2016 Alex Legler <a3li@gentoo.org>
  */
 class LaborTemplate extends BaseTemplate {
 	function execute() {
@@ -327,7 +327,8 @@ class LaborTemplate extends BaseTemplate {
 	/*************************************************************************************************/
 	function personaltools() {
 		$personal_tools = $this->getPersonalTools();
-		$notification_tool = NULL;
+		$notifications_message_tool = NULL;
+		$notifications_alert_tool = NULL;
 
 		?>
 		<li class="dropdown">
@@ -344,8 +345,10 @@ class LaborTemplate extends BaseTemplate {
 			<ul class="dropdown-menu" role="menu">
 				<?php
 					foreach ( $personal_tools as $key => $item ) {
-						if ($key === 'notifications') {
-							$notification_tool = $item;
+						if ($key === 'notifications-alert') {
+							$notifications_alert_tool = $item;
+						} else if ($key === 'notifications-message') {
+							$notifications_message_tool = $item;
 						} else {
 							echo $this->makeListItem( $key, $item );
 						}
@@ -355,8 +358,12 @@ class LaborTemplate extends BaseTemplate {
 		</li>
 		<?php
 
-		if (!is_null($notification_tool)) {
-			echo $this->makeListItem('notifications', $notification_tool);
+		if (!is_null($notifications_message_tool)) {
+			echo $this->makeListItem('notifications-message', $notifications_message_tool);
+		}
+
+		if (!is_null($notifications_alert_tool)) {
+			echo $this->makeListItem('notifications-alert', $notifications_alert_tool);
 		}
 	}
 
