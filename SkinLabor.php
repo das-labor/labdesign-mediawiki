@@ -15,13 +15,15 @@ class SkinLabor extends SkinTemplate {
 	public $stylename = 'Labor';
 	public $template  = 'LaborTemplate';
 
-	const CDN_URL = '/skins/Labor';
-
 	function setupSkinUserCss(OutputPage $out) {
 		parent::setupSkinUserCss($out);
 
-		$out->addStyle(SkinLabor::CDN_URL . '/css/bootstrap.min.css');
-		$out->addStyle(SkinLabor::CDN_URL . '/css/labor.css');
+                $CDN_URL = $this->getConfig()->get( 'LocalStylePath' ) .
+                                 '/Labor';
+
+		$out->addStyle($CDN_URL . '/css/bootstrap.min.css');
+		$out->addStyle($CDN_URL . '/css/labor.css');
+		$out->addStyle($CDN_URL . '/css/flatpickr/flatpickr.min.css');
 
 		$out->addModuleStyles(array(
 			'mediawiki.skinning.interface',
