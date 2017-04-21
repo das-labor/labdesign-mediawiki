@@ -112,6 +112,7 @@ pre pre {
 	border-radius: 0;
 	border: none;
 	padding: 0;
+	margin: 0;
 }
 
 .white {
@@ -219,6 +220,32 @@ div#preferences table td {
 	background-color: #4b406d;
 }
 
+/* mw-echo-notifications-badge mw-echo-notification-badge-nojs oo-ui-image-invert oo-ui-iconElement oo-ui-iconElement-icon oo-ui-icon-speechBubble */
+/* oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement oo-ui-labelElement-label oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-buttonElement-button oo-ui-iconElement-icon oo-ui-flaggedElement-primary mw-echo-notifications-badge oo-ui-icon-speechBubble oo-ui-iconElement oo-ui-image-invert */
+
+body.skin-labor #pt-notifications-alert .mw-echo-notifications-badge,
+body.skin-labor #pt-notifications-message .mw-echo-notifications-badge {
+	border-radius: 0.2em;
+	background-color: transparent;
+	font-size: 1.125em;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 0;
+	display: inline-block;
+	padding: 10px;
+	padding-left: 35px;
+	height: 40px;
+	background-position: 10px 10px;
+	background-size: 1.1em;
+	background-repeat: no-repeat;
+}
+
+body.ltr #pt-notifications-alert .mw-echo-notifications-badge, body.ltr #pt-notifications-message .mw-echo-notifications-badge {
+	background-position: 10px 10px !important;
+}
+
 .flow-board-header, .flow-board-navigation, .flow-board-header-menu, .flow-board {
 	max-width: none;
 }
@@ -227,7 +254,13 @@ div#content .flow-topic-title {
 	font-family: 'Bitter';
 }
 
+
+
 body.mw-special-Specialpages h2 {
 	border: none !important;
 	margin-bottom: 0.75em;
+}
+
+.gp-useflag-table-container {
+	max-height: 300px;
 }
