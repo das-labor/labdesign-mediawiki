@@ -3035,3 +3035,10 @@ input[id*='mw-input-wpsmw-']
 {
   height: 14px;
 }
+
+.room_status {
+  width: 130px;
+  height: 130px;
+  display:block;
+  background-image: url("https://www.das-labor.org/status/status_img.php");
+}
