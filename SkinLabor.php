@@ -15,6 +15,9 @@ class SkinLabor extends SkinTemplate {
 	public $stylename = 'Labor';
 	public $template  = 'LaborTemplate';
 
+	private $output;
+
+
 	function setupSkinUserCss(OutputPage $out) {
 		$this->output = $out;
 
