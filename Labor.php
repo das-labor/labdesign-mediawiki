@@ -34,6 +34,7 @@ $wgResourceModules['skins.labor.styles'] = array(
 	'localBasePath' => __DIR__,
 );
 
+// Copy these lines in LocalSettings.php for responsiveness
 $wgHooks['OutputPageBeforeHTML'][] = 'injectMetaTags';
 
 function injectMetaTags($out) {
@@ -41,3 +42,4 @@ function injectMetaTags($out) {
 	$out->addMeta('theme-color', '#54487a');
 	return true;
 }
+// End of responsiveness
