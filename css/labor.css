@@ -1,5 +1,5 @@
 @font-face { font-family: Labor; src: url(../fonts/laborone/LaborOne-Black.ttf); }
-.laborlogo { font-family: Labor; position: relative; top: -10px; }
+.laborlogo { font-family: Labor; position: relative; top: 15px; left: 10px; }
 .laborlogomain { font-size: 48pt; color: #eee; }
 .laborlogohigh { color: #f60; }
 
@@ -115,7 +115,6 @@ textarea {
 }
 .site-title {
   background-image: url('../images/header.jpg');
-  background-position: 0px -150px;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbeb8db', endColorstr='#ffdddaec', GradientType=0);
   background-color: #eeeeee;
@@ -125,7 +124,7 @@ textarea {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 63px;
+  height: 150px;
 }
 .site-label {
   display: inline;
@@ -351,7 +350,7 @@ body {
   background-color: #114;
   border-color: #463c65;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54487a', endColorstr='#ff493f6a', GradientType=0);
-  z-index: 1000;
+  z-index: 999;
   border-width: 0 0 1px;
 }
 @media (min-width: 768px) {

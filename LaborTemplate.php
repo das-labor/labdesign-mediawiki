@@ -96,8 +96,8 @@ class LaborTemplate extends BaseTemplate {
 			<div class="container">
 				<div class="row">
 					<div class="site-title-buttons">
-						<div class="btn-group btn-group-sm">
-							<div class="btn-group btn-group-sm">
+						<div class="btn-group btn-group-md">
+							<div class="btn-group btn-group-md">
 								<a class="btn gentoo-org-sites dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
 									<span class="fa fa-fw fa-map-o"></span> <span class="hidden-xs">Labor e.V. Webseiten</span> <span class="caret"></span>
 								</a>
