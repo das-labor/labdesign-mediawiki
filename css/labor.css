@@ -248,6 +248,9 @@ fieldset[disabled] .get-gentoo {
   .get-gentoo {
     display: none !important;
   }
+  .blog-content {
+    margin: 0;
+  }
 }
 @media (max-width: 767px) {
   .gentoo-org-sites {
@@ -3041,4 +3044,18 @@ input[id*='mw-input-wpsmw-']
   height: 130px;
   display:block;
   background-image: url("https://www.das-labor.org/status/status_img.php");
+}
+
+.blog-content {
+  margin: 0 10%;
+  font-size: 150%;
+  line-height: 150%;
+}
+
+.blog-content p {
+  line-height: 150%;
+}
+
+.mw-content-ltr ul {
+  margin: 0 0 0.5em 2em;
 }
