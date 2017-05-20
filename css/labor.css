@@ -178,7 +178,7 @@ textarea {
 .site-title-button-group .btn-group + .btn-group {
   margin-left: -1px;
 }
-.p {
+p {
   line-height: 1.5em;
 }
 .get-gentoo {
