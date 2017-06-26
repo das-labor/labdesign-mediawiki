@@ -347,6 +347,7 @@ fieldset[disabled] .gentoo-org-sites {
 }
 body {
   border-top: 1px solid #54487a;
+  font-family: "Source Sans Pro";
 }
 .tyrian-navbar {
   position: relative;
