@@ -96,17 +96,20 @@ class LaborTemplate extends BaseTemplate {
 			<div class="container">
 				<div class="row">
 					<div class="site-title-buttons">
+						<span class="room_status"></span>
 						<div class="btn-group btn-group-md">
 							<div class="btn-group btn-group-md">
 								<a class="btn gentoo-org-sites dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
 									<span class="fa fa-fw fa-map-o"></span> <span class="hidden-xs">Labor e.V. Webseiten</span> <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-menu-right">
-									<li><a href="https://das-labor.org/" title="Hauptseite"><span class="fa fa-home fa-fw"></span> das-labor.org</a></li>
-									<li><a href="https://wiki.das-labor.org/" title="Dokumentation"><span class="fa fa-file-text-o fa-fw"></span> Wiki</a></li>
-									<li><a href="https://github.com/das-labor/" title="Software, Vorlagen, Archive"><span class="fa fa-code fa-fw"></span> Software</a></li>
-									<li><a href="https://www.flickr.com/groups/daslabor/" title="Fotos"><span class="fa fa-picture-o fa-fw"></span> Fotos</a></li>
-									<li><a href="https://twitter.com/dasLabor" title="Twitter"><span class="fa fa-twitter fa-fw"></span> Twitter</a></li>
+									<li><a href="https://github.com/das-labor/" title="Software, Vorlagen, Archive"><span class="fa fa-code fa-fw"></span> Github/Software</a></li>
+									<li><a href="https://www.flickr.com/groups/daslabor/" title="Fotos"><span class="fa fa-picture-o fa-fw"></span> Fotos auf Flickr</a></li>
+									<li><a href="https://das-labor.org/mailman/listinfo/announce" title="AnkÃndigungen fÃ¼r Veranstaltungen"><span class="fa fa-envelope fa-fw"></span> eMail-Newsletter</a></li>
+                                                                        <li><a href="https://twitter.com/dasLabor" title="Twitter"><span class="fa fa-twitter fa-fw"></span> Twitter</a></li>
+                                                                        <li><a href="https://chaos.social/@daslabor" title="Mastodon"><span class="fa fa-heart fa-fw"></span> Mastodon</a></li>
+                                                                        <li><a href="https://ruhrspora.de/u/daslabor" title="Diaspora*"><span class="fa fa-asterisk fa-fw"></span> Diaspora*</a></li>
+
 									<li class="divider"></li>
 									<li><a href="https://chaos-west.de/wiki/index.php?title=Hauptseite" title="Chaos-West (Partner)"><span class="fa fa-group fa-fw"></span> Chaos-West</a></li>
 								</ul>

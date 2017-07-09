@@ -1,6 +1,6 @@
 @font-face { font-family: Labor; src: url(../fonts/laborone/LaborOne-Black.ttf); }
-.laborlogo { font-family: Labor; position: relative; top: 15px; left: 10px; }
-.laborlogomain { font-size: 48pt; color: #eee; }
+.laborlogo { font-family: Labor; position: relative; left: 10px; }
+.laborlogomain { font-size: 48pt; color: #fff; }
 .laborlogohigh { color: #f60; }
 
 .navbar-default {
@@ -124,7 +124,7 @@ textarea {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 150px;
+  height: 90px;
 }
 .site-label {
   display: inline;
@@ -254,6 +254,9 @@ fieldset[disabled] .get-gentoo {
   .blog-content {
     margin: 0;
   }
+  .laborlogo {
+    font-size: 30pt;
+  }
 }
 @media (max-width: 767px) {
   .gentoo-org-sites {
@@ -348,10 +351,11 @@ fieldset[disabled] .gentoo-org-sites {
 body {
   border-top: 1px solid #54487a;
   font-family: "Source Sans Pro";
+  font-size: 16px;
 }
 .tyrian-navbar {
   position: relative;
-  min-height: 40px;
+  min-height: 30px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   background-color: #114;
@@ -3044,10 +3048,15 @@ input[id*='mw-input-wpsmw-']
 }
 
 .room_status {
-  width: 130px;
-  height: 130px;
-  display:block;
+  margin: 0 10px -25px 0; 
+  width: 58px;
+  height: 58px;
+  background-size: 52px 52px;
+  display: inline-block;
   background-image: url("https://www.das-labor.org/status/status_img.php");
+  background-color: #fff;
+  border-radius: 100%;
+  border: solid 3px #fff;
 }
 
 .blog-content {
@@ -3062,4 +3071,8 @@ input[id*='mw-input-wpsmw-']
 
 .mw-content-ltr ul {
   margin: 0 0 0.5em 2em;
+}
+
+#firstHeading {
+  border: none;
 }
