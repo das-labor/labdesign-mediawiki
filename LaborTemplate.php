@@ -96,7 +96,7 @@ class LaborTemplate extends BaseTemplate {
 			<div class="container">
 				<div class="row">
 					<div class="site-title-buttons">
-						<span class="room_status"></span>
+						<a href="/w/Status-Bot"><span class="room_status"></span></a>
 						<div class="btn-group btn-group-md">
 							<div class="btn-group btn-group-md">
 								<a class="btn gentoo-org-sites dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
