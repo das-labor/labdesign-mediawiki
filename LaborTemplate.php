@@ -62,7 +62,7 @@ class LaborTemplate extends BaseTemplate {
 
 		<?php $this->footer(); ?>
 
-                <script src="<?php $this->text('stylepath') ?>/Labor/js/jquery-2.1.4.min.js"></script>
+                <script src="<?php $this->text('stylepath') ?>/Labor/js/jquery-2.2.4.min.js"></script>
 		<script src="<?php $this->text('stylepath') ?>/Labor/js/bootstrap.min.js"></script>
 		<script src="<?php $this->text('stylepath') ?>/Labor/js/flatpickr/flatpickr.min.js"></script>
 		<script>
