@@ -163,15 +163,17 @@ class LaborTemplate extends BaseTemplate {
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-offset-2 col-md-7">
+				<div class="col-md-12">
 					<?php if ( count( $validFooterLinks ) > 0 ) { ?>
 						<div class="spacer"></div>
-						<ul id="f-list">
-							<?php foreach ( $validFooterLinks as $aLink ) { ?>
-								<?php if ($aLink === 'copyright') continue; ?>
-								<li id="<?php echo $aLink ?>"><?php $this->html( $aLink ) ?></li>
-							<?php } ?>
-						</ul>
+            <table id="footer-table">
+              <tr>
+							  <?php foreach ( $validFooterLinks as $aLink ) { ?>
+								  <?php if ($aLink === 'copyright') continue; ?>
+								  <td id="<?php echo $aLink ?>" class="footer-item"><?php $this->html( $aLink ) ?></td>
+                <?php } ?>
+              </tr>
+						</table>
 					<?php } ?>
 				</div>
 				<div class="col-xs-12 col-md-3">

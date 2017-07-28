@@ -3076,3 +3076,10 @@ input[id*='mw-input-wpsmw-']
 #firstHeading {
   border: none;
 }
+#footer-table {
+  width: 100%;
+}
+.footer-item {
+  padding: 10px;
+  text-align: center;
+}
