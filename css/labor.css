@@ -1,4 +1,6 @@
 @font-face { font-family: Labor; src: url(../fonts/laborone/LaborOne-Black.ttf); }
+@font-face { font-family: Source Code Pro; src: url(../fonts/sourcecodepro/SourceCodePro-Regular.ttf); }
+@font-face { font-family: Source Sans Pro; src: url(../fonts/sourcesanspro/SourceSansPro-Regular.ttf); }
 .laborlogo { font-family: Labor; position: relative; left: 10px; }
 .laborlogomain { font-size: 48pt; color: #fff; }
 .laborlogohigh { color: #f60; }
