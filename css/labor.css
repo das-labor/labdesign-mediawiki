@@ -346,6 +346,11 @@ fieldset[disabled] .gentoo-org-sites {
   display: inline-block;
   height: 63px;
 }
+
+.site-logo:hover {
+  text-decoration-line: none;
+}
+
 .site-logo object {
   pointer-events: none;
   vertical-align: middle;

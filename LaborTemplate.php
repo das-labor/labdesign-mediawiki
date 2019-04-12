@@ -105,7 +105,7 @@ class LaborTemplate extends BaseTemplate {
 								<ul class="dropdown-menu dropdown-menu-right">
 									<li><a href="https://github.com/das-labor/" title="Software, Vorlagen, Archive"><span class="fa fa-code fa-fw"></span> Github/Software</a></li>
 									<li><a href="https://www.flickr.com/groups/daslabor/" title="Fotos"><span class="fa fa-picture-o fa-fw"></span> Fotos auf Flickr</a></li>
-									<li><a href="https://das-labor.org/mailman/listinfo/announce" title="Ank�ndigungen für Veranstaltungen"><span class="fa fa-envelope fa-fw"></span> eMail-Newsletter</a></li>
+									<li><a href="https://das-labor.org/mailman/listinfo/announce" title="Ank�ndigungen für Veranstaltungen"><span class="fa fa-envelope fa-fw"></span> eMail-Newsletter</a></li>
                                                                         <li><a href="https://twitter.com/dasLabor" title="Twitter"><span class="fa fa-twitter fa-fw"></span> Twitter</a></li>
                                                                         <li><a href="https://chaos.social/@daslabor" title="Mastodon"><span class="fa fa-heart fa-fw"></span> Mastodon</a></li>
                                                                         <li><a href="https://ruhrspora.de/u/daslabor" title="Diaspora*"><span class="fa fa-asterisk fa-fw"></span> Diaspora*</a></li>
@@ -117,9 +117,9 @@ class LaborTemplate extends BaseTemplate {
 						</div>
 					</div>
 					<div class="logo">
-						<a href="/" title="Zurück zur Hauptseite" class="site-logo"><a href="" alt="Labor Logo"></a>
-						<!-- <span class="site-label">das labor</span> -->
-						<span class="laborlogo laborlogomain">das la<span class="laborlogohigh">bo</span>r</span>
+						<a href="/" title="Zurück zur Hauptseite" class="site-logo">
+							<span class="laborlogo laborlogomain">das la<span class="laborlogohigh">bo</span>r</span>
+						</a>
 					</div>
 				</div>
 			</div>
