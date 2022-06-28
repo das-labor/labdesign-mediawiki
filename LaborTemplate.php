@@ -7,7 +7,7 @@
  */
 class LaborTemplate extends BaseTemplate {
 	function execute() {
-		wfSuppressWarnings();
+		Wikimedia\AtEase\AtEase::suppressWarnings();
 
 		$this->html( 'headelement' );
 
@@ -80,7 +80,7 @@ class LaborTemplate extends BaseTemplate {
 		$this->printTrail();
 		echo Html::closeElement( 'body' );
 		echo Html::closeElement( 'html' );
-		wfRestoreWarnings();
+		Wikimedia\AtEase\AtEase::restoreWarnings();
 	} // end of execute() method
 
 	/*************************************************************************************************/
