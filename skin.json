@@ -2,7 +2,9 @@
 	"name": "Labor",
 	"namemsg": "skinname-labor",
 	"author": [
-		"Marcus Brinkmann"
+		"Alex Legler and Gentoo wiki project",
+		"Marcus Brinkmann",
+		"fridtjof"
 	],
 	"url": "https://wiki.das-labor.org/",
 	"descriptionmsg": "labor-desc",
