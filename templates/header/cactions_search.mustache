@@ -1,0 +1,19 @@
+{{#data-search-box}}
+	<form action="{{form-action}}" id="searchform" class="navbar-form navbar-right" role="search">
+		{{! supposedly page-title provides this entire input }}
+		{{! but that's not the case (in 1.35) }}
+		{{! TODO: this might break on later versions }}
+		<input type='hidden' name="title" value="{{page-title}}">
+
+		<div class="input-group">
+			<input id="searchInput" class="form-control" {{{html-input-attributes}}}>
+			<div class="input-group-btn">
+				{{! searchButton is a mediawiki class, but it's not included in -attributes }}
+				<input id="searchGoButton" class="searchButton btn btn-default"
+					   value="{{msg-searcharticle}}" {{{html-button-go-attributes}}}>
+				<input id="mw-searchButton" class="searchButton btn btn-default"
+					   value="{{msg-searchbutton}}" {{{html-button-fulltext-attributes}}}>
+			</div>
+		</div>
+	</form>
+{{/data-search-box}}

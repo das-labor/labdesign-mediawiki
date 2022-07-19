@@ -11,10 +11,24 @@
 	"license-name": "GPLv2",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"ValidSkinNames": {
-		"labor": "Labor"
+		"labor": {
+			"class": "SkinLabor",
+			"args": [
+				{
+					"name": "labor",
+					"templateDirectory": "skins/Labor/templates/",
+					"template": "skin",
+					"styles": [
+						"mediawiki.skinning.interface",
+						"mediawiki.skinning.content.externallinks",
+						"skins.labor.styles"
+					]
+				}
+			]
+		}
 	},
 	"MessagesDirs": {
 		"Labor": [
@@ -22,8 +36,9 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinLabor": "SkinLabor.php",
-		"LaborTemplate": "LaborTemplate.php"
+		"SkinMustache35Polyfill": "SkinMustache35Polyfill.php",
+		"SkinMustache38Polyfill": "SkinMustache38Polyfill.php",
+		"SkinLabor": "SkinLabor.php"
 	},
 	"ResourceModules": {
 		"skins.labor.styles": {
@@ -31,7 +46,10 @@
 			"styles": {
 				"main.css": {
 					"media": "screen"
-				}
+				},
+				"css/bootstrap.min.css": {},
+				"css/labor.css": {},
+				"css/flatpickr/flatpickr.min.css": {}
 			}
 		}
 	},

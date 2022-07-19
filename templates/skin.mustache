@@ -1,0 +1,60 @@
+{{>header}}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        {{#html-site-notice}}
+          <div id="siteNotice">{{{html-site-notice}}}</div>
+        {{/html-site-notice}}
+
+        <h1 id="firstHeading" class="first-header" lang="{{pageLanguage}}">
+          <span dir="auto">{{{html-title}}}</span>
+        </h1>
+
+        <div id="bodyContent" class="mw-body-content">
+          <div id="siteSub">{{msg-tagline}}</div>
+          <div id="contentSub" {{{html-user-language-attributes}}}>
+            {{{html-subtitle}}}
+          </div>
+          {{#html-undelete-link}}
+            <div id="contentSub2">{{{html-undelete-link}}}</div>
+          {{/html-undelete-link}}
+          {{#newtalk}}
+            <div class="usermessage">{{{newtalk}}}</div>
+          {{/newtalk}}
+          <div id="jump-to-nav" class="mw-jump">
+            {{msg-jumpto}}
+            <a href="#column-one">{{msg-jumptonavigation}}</a>{{msg-comma-separator}}
+            <a href="#searchInput">{{msg-jumptosearch}}</a>
+          </div>
+
+          <!-- start content -->
+          {{{html-body-content}}}
+          {{{html-categories}}}
+          <!-- end content -->
+
+          {{{html-after-content}}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{>footer}}
+
+{{! TODO stylepath/don't hardcode skins/ }}
+<script src="/skins/Labor/js/jquery-2.2.4.min.js"></script>
+<script src="/skins/Labor/js/bootstrap.min.js"></script>
+<script src="/skins/Labor/js/flatpickr/flatpickr.min.js"></script>
+<script>
+  $(".make-me-a-date-time-picker").flatpickr({
+       enableTime: true,
+       dateFormat: "Y/m/d H:i:S",
+       time_24hr: true
+  });
+  $(".make-me-a-date-picker").flatpickr({
+       dateFormat: "Y/m/d"
+  });
+</script>

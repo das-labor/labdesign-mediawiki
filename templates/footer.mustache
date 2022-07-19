@@ -1,0 +1,37 @@
+<footer>
+	<div class="container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="spacer"></div>
+				<table id="footer-table">
+					<tr>
+						{{#data-footer}}
+							{{#data-info}}
+								{{#array-items}}
+									<td id="{{id}}-{{name}}" class="footer-item">{{{html}}}</td>
+								{{/array-items}}
+							{{/data-info}}
+							{{#data-places}}
+								{{#array-items}}
+									<td id="{{id}}" class="footer-item">{{{html}}}</td>
+								{{/array-items}}
+							{{/data-places}}
+						{{/data-footer}}
+					</tr>
+				</table>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<!-- No questions or comments, the Wiki has enough information on how to contact us. -->
+			</div>
+		</div>
+		<!--<div class="row">
+			<div class="copyright c12">
+				Creative Commons: Namensnennung Deutschland 3.0; 2015
+				<a href="https://www.das-labor.org/?lang=de">das labor</a>. Einige Rechte vorbehalten.
+				<a href="https://www.das-labor.org/?page_id=1679">Impressum</a>,
+				<a href="https://www.das-labor.org/?page_id=1723">Datenschutz</a>
+			</div>
+		</div>-->
+	</div>
+</footer>

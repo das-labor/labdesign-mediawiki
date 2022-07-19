@@ -1,0 +1,67 @@
+<nav class="tyrian-navbar" role="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-main-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-main-collapse">
+				<ul class="nav navbar-nav">
+					{{#data-portlets-sidebar}}
+						{{#data-portlets-first}}
+							{{{html-items}}}
+						{{/data-portlets-first}}
+						{{#array-portlets-rest}}
+							<li class="dropdown">
+								{{!TODO i18n support through msg lookup - has to be done in PHP}}
+								<a href="/wiki/Gentoo_Wiki:Menu-{{label}}" class="dropdown-toggle"
+								   data-toggle="dropdown"
+								   role="button" aria-expanded="false">
+									{{!TODO htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $bar );}}
+									{{label}} <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									{{{html-items}}}
+								</ul>
+							</li>
+						{{/array-portlets-rest}}
+					{{/data-portlets-sidebar}}
+				</ul>
+				<ul class="nav navbar-nav navbar-right hidden-xs">
+					{{#data-portlets-sidebar}}
+						{{#data-portlets-toolbox}}
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								   aria-expanded="false"><i class="fa fa-cog"></i> {{msg-toolbox}} <span
+									class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									{{{html-items}}}
+								</ul>
+							</li>
+						{{/data-portlets-toolbox}}
+					{{/data-portlets-sidebar}}
+					{{#data-portlets}}
+						{{#data-personal}}
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								   aria-expanded="false">
+									<span class="fa fa-fw fa-user" aria-label="{{label}}"></span>
+									{{dynamic-label}}
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									{{{html-items}}}
+									{{!TODO do we need to manually handle notification stuff here?}}
+								</ul>
+							</li>
+						{{/data-personal}}
+					{{/data-portlets}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
