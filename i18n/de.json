@@ -5,7 +5,7 @@
 		]
 	},
 	"skinname-labor": "Labor",
-	"labor-desc": "Das neue Aussehen der Labor-Webseiten, auf MediaWiki portiert",
+	"labor-desc": "Das neue Aussehen der Labor-Webseiten, basierend auf dem Tyrian-Theme von gentoo.org",
 	"labor.css": "/* Das folgende CSS wird für Benutzer der Labor-Benutzeroberfläche geladen */",
 	"labor.js": "/* Das folgende JavaScript wird für Benutzer der Labor-Benutzeroberfläche geladen. */"
 }
