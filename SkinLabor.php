@@ -38,20 +38,12 @@ class SkinLabor extends SkinMustache38Polyfill
 		$data["msg-searchbutton"] = $this->msg('searchbutton')->text();
 		$data["msg-toolbox"] = $this->msg('toolbox')->text();
 
-
-		// apply another class on the selected item here
-		// without rebuilding all of it
-		// yes, this is kinda hacked up
-		$namespaces_items = $data['data-portlets']['data-namespaces']['html-items'];
-		$data['data-portlets']['data-namespaces']['html-items'] = str_replace('class="selected"', 'class="selected active"', $namespaces_items);
-
-
 		# split out the toolbox portlet, so it can be rendered separately
 		$nav_portlets = $data['data-portlets-sidebar']['array-portlets-rest'];
-		$arr = array_values(array_filter($nav_portlets, function ($portlet) {
+		$toolbox = array_values(array_filter($nav_portlets, function ($portlet) {
 			return $portlet['id'] === 'p-tb';
 		}))[0];
-		$data['data-portlets-sidebar']['data-portlets-toolbox'] = $arr;
+		$data['data-portlets-sidebar']['data-portlets-toolbox'] = $toolbox;
 		$data['data-portlets-sidebar']['array-portlets-rest']
 			= array_filter($nav_portlets, function ($portlet) {
 			return $portlet['id'] !== 'p-tb';

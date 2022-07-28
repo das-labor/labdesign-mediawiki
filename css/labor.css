@@ -91,7 +91,8 @@ textarea {
   background-color: #e1e1e1;
   border: none;
 }
-.navbar-grey ul.nav li.active {
+.navbar-grey ul.nav li.active,
+.navbar-grey ul.nav li.selected {
   background-color: #fafafa;
 }
 .navbar-grey a:link,
