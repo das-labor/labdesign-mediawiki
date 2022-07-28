@@ -21,15 +21,15 @@
 						{{#data-portlets-content-primary}}
 							{{{html-items}}}
 						{{/data-portlets-content-primary}}
-						{{#data-portlets-content-secondary}}
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-								   aria-expanded="false">more <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+							   aria-expanded="false">more <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								{{#data-portlets-content-secondary}}
 									{{{html-items}}}
-								</ul>
-							</li>
-						{{/data-portlets-content-secondary}}
+								{{/data-portlets-content-secondary}}
+							</ul>
+						</li>
 					</ul>
 				{{/data-portlets}}
 			</div>

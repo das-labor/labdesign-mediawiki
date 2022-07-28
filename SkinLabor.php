@@ -16,11 +16,6 @@ class SkinLabor extends SkinMustache38Polyfill
 	public $stylename = 'Labor';
 	public $template = 'LaborTemplate';
 
-	private function a()
-	{
-
-	}
-
 	public function getTemplateData(): array
 	{
 		$data = parent::getTemplateData();
@@ -101,9 +96,9 @@ class SkinLabor extends SkinMustache38Polyfill
 				return !$is_primary;
 			});
 		};
+
 		$primary = [];
 		$secondary = [];
-		// TODO critical: why do the actions not appear?
 		foreach (['views', 'actions'] as $name) {
 			$primary[$name] = $getprimary($contentNavigation[$name]);
 			$secondary[$name] = $getsecondary($contentNavigation[$name]);
@@ -116,7 +111,7 @@ class SkinLabor extends SkinMustache38Polyfill
 
 		$data['data-portlets']['data-portlets-content-secondary'] = [];
 		foreach ($secondary as $key => $items) {
-			$data['data-portlets']['data-portlets-content-secondary'] += $this->_getPortletData($key, $items);
+			$data['data-portlets']['data-portlets-content-secondary'][] = $this->_getPortletData($key, $items);
 		}
 
 		return $data;
