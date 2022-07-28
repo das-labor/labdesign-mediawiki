@@ -51,7 +51,7 @@
   src: local('Bitter-Regular'), url(Bitter-Regular.woff) format('woff');
 }
 h1.first-header {
-  margin-top: -10px;
+  margin-top: 20px;
 }
 h1 small,
 h2 small,
@@ -85,6 +85,7 @@ textarea {
 }
 .navbar-stick {
   margin-top: -20px;
+  margin-bottom: 0;
 }
 .navbar-grey {
   background-color: #e1e1e1;
@@ -3027,10 +3028,10 @@ background-image: none;
 border: 1px solid #ccc;
 }
 
-input.mw-summary, 
+input.mw-summary,
 input[id*='mw-input-'],
-input.forminput_button,  
-button, 
+input.forminput_button,
+button,
 input.mw-htmlform-submit,
 select,
 .ampmInput,
@@ -3055,7 +3056,7 @@ input[id*='mw-input-wpsmw-']
 }
 
 .room_status {
-  margin: 0 10px -25px 0; 
+  margin: 0 10px -25px 0;
   width: 58px;
   height: 58px;
   background-size: 52px 52px;
