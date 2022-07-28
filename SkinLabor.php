@@ -116,19 +116,4 @@ class SkinLabor extends SkinMustache38Polyfill
 
 		return $data;
 	}
-
-	function setupSkinUserCss(OutputPage $out)
-	{ // TODO look at gentoo skin and rework this w/o setupSkinUserCss
-		// override getDefaultModules?
-		$output = $this->getOutput();
-
-		parent::setupSkinUserCss($output);
-
-		$CDN_URL = $this->getConfig()->get('LocalStylePath') . '/Labor';
-
-		//$output->addModuleStyles();
-		$output->addStyle($CDN_URL . '/css/bootstrap.min.css');
-		$output->addStyle($CDN_URL . '/css/labor.css');
-		$output->addStyle($CDN_URL . '/css/flatpickr/flatpickr.min.css');
-	}
 }
