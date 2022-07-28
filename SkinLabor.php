@@ -106,7 +106,7 @@ class SkinLabor extends SkinMustache38Polyfill
 
 		$data['data-portlets']['data-portlets-content-primary'] = [];
 		foreach ($primary as $key => $items) {
-			$data['data-portlets']['data-portlets-content-primary'] += $this->_getPortletData($key, $items);
+			$data['data-portlets']['data-portlets-content-primary'][] = $this->_getPortletData($key, $items);
 		}
 
 		$data['data-portlets']['data-portlets-content-secondary'] = [];
