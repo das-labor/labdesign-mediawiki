@@ -36,8 +36,6 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinMustache35Polyfill": "SkinMustache35Polyfill.php",
-		"SkinMustache38Polyfill": "SkinMustache38Polyfill.php",
 		"SkinLabor": "SkinLabor.php"
 	},
 	"ResourceModules": {

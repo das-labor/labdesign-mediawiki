@@ -10,7 +10,7 @@
  *
  * @ingroup Skins
  */
-class SkinLabor extends SkinMustache38Polyfill
+class SkinLabor extends SkinMustache
 {
 	public $skinname = 'labor';
 	public $stylename = 'Labor';
