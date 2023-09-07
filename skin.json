@@ -61,7 +61,7 @@
 				"css/bootstrap.min.css": {},
 				"css/bootstrap-social.css": {},
 				"css/fontawesome.css": {},
-				"css/labor.css": {},
+				"css/labor.less": {},
 				"css/flatpickr/flatpickr.min.css": {}
 			}
 		}
