@@ -59,6 +59,8 @@
 					"media": "screen"
 				},
 				"css/bootstrap.min.css": {},
+				"css/bootstrap-social.css": {},
+				"css/fontawesome.css": {},
 				"css/labor.css": {},
 				"css/flatpickr/flatpickr.min.css": {}
 			}
