@@ -11,7 +11,7 @@
 	"license-name": "GPLv2",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"ValidSkinNames": {
 		"labor": {
