@@ -569,7 +569,6 @@ ul.three-icons li {
   }
 }
 
-<<<<<<< HEAD
 /* white and readable forms and buttons */
 textarea {
   padding: 6px 12px;
@@ -579,20 +578,6 @@ textarea {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
-}
-input.mw-summary,
-input[id*='mw-input-'],
-input.forminput_button,
-button,
-=======
-textarea {
-padding: 6px 12px;
-font-size: 14px;
-line-height: 1.42857143;
-color: #555;
-background-color: #fff;
-background-image: none;
-border: 1px solid #ccc;
 }
 
 input.mw-summary,
@@ -605,15 +590,15 @@ select,
 input[class*='Input'],
 #wpSummary, #wpSave, #wpPreview, #wpDiff, #wpDestFile
 {
-border-radius: 4px;
-height: 34px;
-padding: 6px 12px;
-font-size: 14px;
-line-height: 1.42857143;
-color: #555;
-background-color: #fff;
-background-image: none;
-border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
 }
 
 input[id*='mw-input-wpsrf-'],
