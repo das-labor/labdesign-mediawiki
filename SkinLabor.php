@@ -76,6 +76,12 @@ class SkinLabor extends SkinMustache
 
 	// modify menus before they're rendered as portlets
 	public static function onSkinTemplateNavigationUniversal(SkinTemplate $sktemplate, array &$links) {
+		// fix weird display of anonuserpage placeholder by making it a "link"
+		if (isset($links['user-menu']['anonuserpage'])) {
+			$links['user-menu']['anonuserpage']['href'] = '#';
+			$links['user-menu']['anonuserpage']['active'] = false;
+		}
+
 		// sort content actions and views into primary/secondary for a cleaner look
 		MWDebug::log(json_encode($links));
 		$getprimary = function ($from): array {
