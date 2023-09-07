@@ -21,8 +21,6 @@
 					"name": "labor",
 					"template": "skin",
 					"styles": [
-						"mediawiki.skinning.interface",
-						"mediawiki.skinning.content.externallinks",
 						"skins.labor.styles"
 					]
 				}
@@ -39,7 +37,14 @@
 	},
 	"ResourceModules": {
 		"skins.labor.styles": {
+			"class": "ResourceLoaderSkinModule",
 			"position": "top",
+			"features": {
+				"content-links-external": true,
+				"content-tables": true,
+				"interface": true,
+				"interface-category": true
+			},
 			"styles": {
 				"main.css": {
 					"media": "screen"
