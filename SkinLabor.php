@@ -31,13 +31,6 @@ class SkinLabor extends SkinMustache
 				return $item['name'] !== 'copyright';
 			});
 
-
-		// button labels for the search bar,
-		// missing from the data for some reason
-		$data["msg-searcharticle"] = $this->msg('searcharticle')->text();
-		$data["msg-searchbutton"] = $this->msg('searchbutton')->text();
-		$data["msg-toolbox"] = $this->msg('toolbox')->text();
-
 		# split out the toolbox portlet, so it can be rendered separately
 		$nav_portlets = $data['data-portlets-sidebar']['array-portlets-rest'];
 		$toolbox = array_values(array_filter($nav_portlets, function ($portlet) {

@@ -22,6 +22,11 @@
 					"template": "skin",
 					"styles": [
 						"skins.labor.styles"
+					],
+					"messages": [
+						"searcharticle",
+						"searchbutton",
+						"toolbox"
 					]
 				}
 			]
