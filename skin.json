@@ -19,7 +19,6 @@
 			"args": [
 				{
 					"name": "labor",
-					"template": "skin",
 					"styles": [
 						"skins.labor.styles"
 					],

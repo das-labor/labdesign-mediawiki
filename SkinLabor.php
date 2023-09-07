@@ -12,10 +12,6 @@
  */
 class SkinLabor extends SkinMustache
 {
-	public $skinname = 'labor';
-	public $stylename = 'Labor';
-	public $template = 'LaborTemplate';
-
 	public function getTemplateData(): array
 	{
 		$data = parent::getTemplateData();
