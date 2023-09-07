@@ -23,8 +23,13 @@
 						"skins.labor.styles"
 					],
 					"messages": [
+						"comma-separator",
+						"jumpto",
+						"jumptonavigation",
+						"jumptosearch",
 						"searcharticle",
 						"searchbutton",
+						"tagline",
 						"toolbox"
 					]
 				}
