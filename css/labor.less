@@ -15,20 +15,16 @@
 .laborlogohigh { color: #f60; }
 
 .navbar-default {
-  background-image: -webkit-linear-gradient(top, #54487a 0%, #493f6a 100%);
-  background-image: -o-linear-gradient(top, #54487a 0%, #493f6a 100%);
   background-image: linear-gradient(to bottom, #54487a 0%, #493f6a 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54487a', endColorstr='#ff493f6a', GradientType=0);
 }
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -123,24 +119,13 @@ textarea {
 }
 
 .tyrian-navbar {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  .noselect();
 }
 .site-title {
   background-image: url('../images/header.jpg');
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbeb8db', endColorstr='#ffdddaec', GradientType=0);
   background-color: #eeeeee;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  .noselect();
   height: 90px;
 }
 .site-label {
@@ -218,10 +203,7 @@ p {
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  .noselect();
   color: #ffffff;
   background-color: #54487a;
   border-color: #493f6a;
@@ -237,7 +219,6 @@ p {
   .active {
     outline: 0;
     background-image: none;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   }
   .disabled,
@@ -247,7 +228,6 @@ p {
     pointer-events: none;
     opacity: 0.65;
     filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
   &:hover,
@@ -296,10 +276,7 @@ p {
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  .noselect();
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
@@ -315,7 +292,6 @@ p {
   &.active {
     outline: 0;
     background-image: none;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   }
   &.disabled,
@@ -325,7 +301,6 @@ p {
     pointer-events: none;
     opacity: 0.65;
     filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
   &:hover,
@@ -351,12 +326,7 @@ p {
 
 .logo {
   display: inline-block;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  .noselect();
   cursor: default;
 }
 .site-logo {
@@ -387,7 +357,6 @@ body {
   border: 1px solid transparent;
   background-color: #114;
   border-color: #463c65;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54487a', endColorstr='#ff493f6a', GradientType=0);
   z-index: 999;
   border-width: 0 0 1px;
 
@@ -530,7 +499,6 @@ footer {
   margin-top: 2em;
   padding-top: 0.5em;
   padding-bottom: 1em;
-  -webkit-box-shadow: inset 0 -1px 5px 0 rgba(0,0,0,.1);
   box-shadow: inset 0 -1px 5px 0 rgba(0,0,0,.1);
   background-image: url('black-thing.svg'), url('znurt.svg');
   background-size: 150px, 100px;
@@ -649,7 +617,7 @@ input[id*='mw-input-wpsmw-']
   height: 58px;
   background-size: 52px 52px;
   display: inline-block;
-  background-image: url("https://www.das-labor.org/status/status_img.php");
+  background-image: url("https://das-labor.org/status/status_img.php");
   background-color: #fff;
   border-radius: 100%;
   border: solid 3px #fff;
