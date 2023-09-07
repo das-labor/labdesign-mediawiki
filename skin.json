@@ -19,7 +19,6 @@
 			"args": [
 				{
 					"name": "labor",
-					"templateDirectory": "skins/Labor/templates/",
 					"template": "skin",
 					"styles": [
 						"mediawiki.skinning.interface",
