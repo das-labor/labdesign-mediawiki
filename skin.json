@@ -54,5 +54,8 @@
 		"localBasePath": "",
 		"remoteSkinPath": "Labor"
 	},
+	"Hooks": {
+		"SkinTemplateNavigation::Universal": "SkinLabor::onSkinTemplateNavigationUniversal"
+	},
 	"manifest_version": 2
 }

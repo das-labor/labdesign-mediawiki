@@ -71,15 +71,18 @@ class SkinLabor extends SkinMustache
 		}
 		$data['data-portlets']['data-personal']['dynamic-label'] = $personaltools_title;
 
+		return $data;
+	}
 
-		// content actions/navs
-		$contentNavigation = $this->buildContentNavigationUrls();
-
+	// modify menus before they're rendered as portlets
+	public static function onSkinTemplateNavigationUniversal(SkinTemplate $sktemplate, array &$links) {
+		// sort content actions and views into primary/secondary for a cleaner look
+		MWDebug::log(json_encode($links));
 		$getprimary = function ($from): array {
 			return array_filter($from, function ($view) {
 				$is_primary = isset($view['primary']) && $view['primary'] === true;
-				$is_view_button = $view['id'] === 'ca-view';
-				return $is_primary && !$is_view_button;
+				$is_redundant = isset($view['redundant']) && $view['redundant'] === true;
+				return $is_primary && !$is_redundant;
 			});
 		};
 		$getsecondary = function ($from): array {
@@ -91,21 +94,27 @@ class SkinLabor extends SkinMustache
 
 		$primary = [];
 		$secondary = [];
+		// don't really need to filter actions, they're all not marked primary.
+		// ¯\_(ツ)_/¯
 		foreach (['views', 'actions'] as $name) {
-			$primary[$name] = $getprimary($contentNavigation[$name]);
-			$secondary[$name] = $getsecondary($contentNavigation[$name]);
+			$primary[$name] = $getprimary($links[$name]);
+			$secondary[$name] = $getsecondary($links[$name]);
 		}
 
-		$data['data-portlets']['data-portlets-content-primary'] = [];
-		foreach ($primary as $key => $items) {
-			$data['data-portlets']['data-portlets-content-primary'][] = $this->_getPortletData($key, $items);
+		$links['portlets-content-primary'] = [];
+		foreach ($primary as $name => $menu) {
+			$links['portlets-content-primary'] += $menu;
 		}
 
-		$data['data-portlets']['data-portlets-content-secondary'] = [];
-		foreach ($secondary as $key => $items) {
-			$data['data-portlets']['data-portlets-content-secondary'][] = $this->_getPortletData($key, $items);
+		$links['portlets-content-secondary'] = [];
+		foreach ($secondary as $name => $menu) {
+			$links['portlets-content-secondary'] += $menu;
 		}
 
-		return $data;
+		// extensions' hooks run after this skin, and add their stuff in here.
+		// to make them show up at all, we need to use the original portlet in our template
+		// this also means we have no control over what they add where, unfortunately
+		$links['views'] = $links['portlets-content-primary'];
+		// this also means we're missing out on any added actions unfortunately...
 	}
 }
