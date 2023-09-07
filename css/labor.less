@@ -378,11 +378,12 @@ body {
   .navbar-nav {
     > li > a {
       color: #ffffff;
-    }
-    > li > a:hover,
-    > li > a:focus {
-      color: #eeeeee;
-      background-color: #4b406d;
+
+      &:hover,
+      &:focus {
+        color: #eeeeee;
+        background-color: #4b406d;
+      }
     }
     > .active {
       > a,
@@ -398,6 +399,14 @@ body {
       > a:focus {
         color: #cccccc;
         background-color: transparent;
+      }
+    }
+    > .open {
+      > a,
+      > a:hover,
+      > a:focus {
+        color: #eeeeee;
+        background-color: #62548f;
       }
     }
   }
@@ -417,12 +426,7 @@ body {
   .navbar-form {
     border-color: #463c65;
   }
-  .navbar-nav > .open > a,
-  .navbar-nav > .open > a:hover,
-  .navbar-nav > .open > a:focus {
-    background-color: #62548f;
-    color: #eeeeee;
-  }
+  
 
   @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
