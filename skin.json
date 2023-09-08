@@ -19,6 +19,7 @@
 			"args": [
 				{
 					"name": "labor",
+					"responsive": true,
 					"styles": [
 						"skins.labor.styles"
 					],
