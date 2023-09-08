@@ -125,8 +125,9 @@ textarea {
   background-image: url('../images/header.jpg');
   background-repeat: repeat-x;
   background-color: #eeeeee;
-  .noselect();
   height: 90px;
+
+  .noselect();
 }
 .site-label {
   display: inline;
@@ -134,7 +135,6 @@ textarea {
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #ffffff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -159,7 +159,6 @@ textarea {
   margin-top: 1em;
   margin-right: 1em;
   float: right !important;
-  float: right;
 }
 .site-title-button-group {
   position: relative;
@@ -197,14 +196,14 @@ p {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border-width: 1px;
+  border-style: solid;
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
   .noselect();
-  color: #ffffff;
   background-color: #54487a;
   border-color: #493f6a;
   color: white !important;
@@ -270,16 +269,16 @@ p {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
   .noselect();
-  color: #333333;
   background-color: #ffffff;
-  border-color: #cccccc;
   color: black !important;
 
   &:hover,
@@ -326,8 +325,8 @@ p {
 
 .logo {
   display: inline-block;
-  .noselect();
   cursor: default;
+  .noselect();
 }
 .site-logo {
   display: inline-block;
@@ -354,11 +353,10 @@ body {
   position: relative;
   min-height: 30px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
   background-color: #114;
-  border-color: #463c65;
   z-index: 999;
-  border-width: 0 0 1px;
+  border: 0 solid #463c65;
+  border-bottom-width: 1px;
 
   @media (min-width: 768px) {
     border-radius: 4px;
@@ -417,7 +415,8 @@ body {
     &:focus {
       background-color: #61538d;
     }
-    & .icon-bar {
+
+    .icon-bar {
       background-color: #ffffff;
     }
   }
@@ -478,14 +477,6 @@ body {
     border-radius: 0;
   }
 
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
   &:before,
   &:after {
     content: " ";
