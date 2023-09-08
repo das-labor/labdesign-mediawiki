@@ -72,7 +72,6 @@ class SkinLabor extends SkinMustache
 		}
 
 		// sort content actions and views into primary/secondary for a cleaner look
-		MWDebug::log(json_encode($links));
 		$getprimary = function ($from): array {
 			return array_filter($from, function ($view) {
 				$is_primary = isset($view['primary']) && $view['primary'] === true;
