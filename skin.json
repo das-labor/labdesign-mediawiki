@@ -48,7 +48,6 @@
 	"ResourceModules": {
 		"skins.labor.styles": {
 			"class": "ResourceLoaderSkinModule",
-			"position": "top",
 			"features": {
 				"content-links-external": true,
 				"content-tables": true,
