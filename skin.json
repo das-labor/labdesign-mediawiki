@@ -50,6 +50,7 @@
 			"class": "ResourceLoaderSkinModule",
 			"features": {
 				"content-links-external": true,
+				"content-media": true,
 				"content-tables": true,
 				"interface": true,
 				"interface-category": true
