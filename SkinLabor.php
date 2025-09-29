@@ -16,7 +16,7 @@ class SkinLabor extends SkinMustache
 	{
 		$data = parent::getTemplateData();
 
-		$data['pageLanguage'] = $this->getTitle()->getPageViewLanguage()->getHtmlCode();
+		$data['pageLanguage'] = $this->getTitle()->getPageLanguage()->getHtmlCode();
 
 		$data['newtalk'] = $this->getNewtalks();
 		$data['newtalk'] = $data['newtalk'] !== '' ? $data['newtalk'] : false;
